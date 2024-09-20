@@ -15,7 +15,7 @@ st.title('Boxing Data Analysis and Match Prediction')
 
 # Read the data
 st.subheader("Boxers Data")
-data_fighters = pd.read_csv('/data/fighters.csv', delimiter=',')
+data_fighters = pd.read_csv('fighters.csv', delimiter=',')
 st.write(data_fighters.head())
 st.write(data_fighters.info())
 
@@ -67,7 +67,7 @@ data_fighters = pd.get_dummies(data_fighters, columns=['stance'])
 
 # Load Popular Matches Dataset
 st.subheader("Popular Matches Data")
-data_pop = pd.read_csv('/data/popular_matches.csv', delimiter=',')
+data_pop = pd.read_csv('popular_matches.csv', delimiter=',')
 st.write(data_pop.head())
 st.write(data_pop.info())
 
