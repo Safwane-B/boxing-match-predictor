@@ -27,7 +27,7 @@ This project uses machine learning techniques to predict boxing match outcomes b
 1. Clone the repository:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/Safwane-B/boxing-match-predictor.git
    cd boxing-data-analysis
 
 
@@ -52,7 +52,7 @@ This project uses machine learning techniques to predict boxing match outcomes b
 1. Clone the repository:
    
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/Safwane-B/boxing-match-predictor.git
    cd boxing-data-analysis
 
 
