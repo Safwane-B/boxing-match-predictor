@@ -30,18 +30,15 @@ This project uses machine learning techniques to predict boxing match outcomes b
    git clone https://github.com/Safwane-B/boxing-match-predictor.git
    cd boxing-data-analysis
 
-
 2. Install dependencies
 
    ```bash
    pip install -r requirements.txt
 
-
 3. Run the streamlit app
    
    ```bash
    streamlit run your_app.py
-
 
 5. Access the app at http://localhost:8501.
 
@@ -55,20 +52,15 @@ This project uses machine learning techniques to predict boxing match outcomes b
    git clone https://github.com/Safwane-B/boxing-match-predictor.git
    cd boxing-data-analysis
 
-
 3. Build the Docker image:
 
    ```bash
    docker build -t boxing-data-app .
 
-
-
-
 4. Run the Docker container:
 
    ```bash
    docker run -p 8501:8501 boxing-data-app
-
 
 5. Access the app at http://localhost:8501.
 
