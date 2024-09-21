@@ -23,7 +23,16 @@ data_pop = pd.read_csv('popular_matches.csv', delimiter=',')
 # Home Page
 if page == "Home":
     st.write("Welcome to the Boxing Data Analysis and Match Prediction app!")
+    st.markdown("""
+    ### Project Overview:
+    This project is designed to analyze data from historical boxing matches and use machine learning techniques to predict match outcomes. The app consists of two main sections: 
 
+    - **Data Exploration & Visualization**: This section provides insights into the boxers' data, including their wins, losses, and other statistics, as well as the number of boxers by country and their knockout rates. Various visualizations help in exploring trends in the data.
+
+    - **Predictive Modeling**: Using machine learning models such as **XGBoost** and **Random Forest**, we predict the outcomes of boxing matches based on historical data. These models are trained on features like boxers' wins, losses, height, and reach.
+
+    The primary goal of this project is to demonstrate how data science can be applied to sports analytics and to build models that help predict future match outcomes.
+    """)
 # Data Exploration Page
 if page == "Data Exploration & Predictive Modeling":
     
