@@ -55,12 +55,12 @@ This project uses machine learning techniques to predict boxing match outcomes b
 3. Build the Docker image:
 
    ```bash
-   docker build -t boxing-data-app .
+   docker build -t streamlit-app .
 
 4. Run the Docker container:
 
    ```bash
-   docker run -p 8501:8501 boxing-data-app
+   docker run -p 8501:8501 streamlit-app
 
 5. Access the app at http://localhost:8501.
 
