@@ -38,5 +38,41 @@ This project uses machine learning techniques to predict boxing match outcomes b
 
 
 3. Run the streamlit app
+   
+   ```bash
+   streamlit run your_app.py
 
-4. Access the app at http://localhost:8501.
+
+5. Access the app at http://localhost:8501.
+
+
+
+## Running with Docker
+
+1. Clone the repository:
+   
+   ```bash
+   git clone <repository_url>
+   cd boxing-data-analysis
+
+
+3. Build the Docker image:
+
+   ```bash
+   docker build -t boxing-data-app .
+
+
+
+
+4. Run the Docker container:
+
+   ```bash
+   docker run -p 8501:8501 boxing-data-app
+
+
+5. Access the app at http://localhost:8501.
+
+
+
+
+
