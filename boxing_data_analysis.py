@@ -16,7 +16,7 @@ st.title('Boxing Data Analysis and Match Prediction')
 # Sidebar for navigation
 page = st.sidebar.radio("Choose a page", ["Home", "Data Exploration & Predictive Modeling"])
 
-# Load the data outside the conditional blocks so it's accessible everywhere
+# Load the data
 data_fighters = pd.read_csv('fighters.csv', delimiter=',')
 data_pop = pd.read_csv('popular_matches.csv', delimiter=',')
 
@@ -36,7 +36,6 @@ if page == "Home":
 # Data Exploration Page
 if page == "Data Exploration & Predictive Modeling":
     
-    # Read the data
     st.subheader("Boxers Data")
     st.markdown("""
     This section loads and displays the dataset of boxers. It provides basic information about the boxers, such as their number of wins, losses, knockout rates, and more. Data cleaning steps are also applied here, such as replacing unknown values and converting certain columns to numeric types.
@@ -102,7 +101,6 @@ if page == "Data Exploration & Predictive Modeling":
     # One-hot encoding for stance
     data_fighters = pd.get_dummies(data_fighters, columns=['stance'])
 
-    # Load Popular Matches Dataset
     st.subheader("Popular Matches Data")
     data_pop = pd.read_csv('popular_matches.csv', delimiter=',')
     st.write(data_pop.head())
@@ -188,7 +186,7 @@ if page == "Data Exploration & Predictive Modeling":
     # Generate full_data
     full_data = full_DATA()
 
-    # Function to normalize the verdict (the match outcome)
+    # Function to normalize the verdict (match outcome)
     def normalize_verdict():
         list_last_name_1 = np.array(data_pop['last_name_1'])
         list_last_name_2 = np.array(data_pop['last_name_2'])
@@ -253,7 +251,7 @@ if page == "Data Exploration & Predictive Modeling":
     """)
 
 
-    # XGBoost Classifier Explanation
+    # XGBoost Classifier
     st.subheader("XGBClassifier Model")
 
     st.markdown("""
@@ -277,7 +275,7 @@ if page == "Data Exploration & Predictive Modeling":
     st.write(f"Test score: {test_score}")
     st.write(f"Accuracy: {accuracy}")
 
-    # RandomForestClassifier model
+    # RandomForestClassifier 
     st.subheader("RandomForestClassifier Model")
     st.markdown("""
     The Random Forest model is trained similarly to the XGBoost model. It creates multiple decision trees and averages their predictions to produce a final prediction. We use the following hyperparameters for the Random Forest:
