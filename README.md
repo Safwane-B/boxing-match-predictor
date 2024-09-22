@@ -19,8 +19,8 @@ This project uses machine learning techniques to predict boxing match outcomes b
 
 ### Prerequisites
 
-- Python 3.x
-- Pip (Python package manager)
+- Python 3.9
+- Pip 
 
 ### Steps
 
